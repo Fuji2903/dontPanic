@@ -1,23 +1,23 @@
 package com.test.thread;
 
+/**
+ * Thread to print string value
+ */
 public class PrintStringThread extends Thread {
 
 	private String printString;
+	private PrintStringPriority priority;
+	private int threadNumber;
 
-	public PrintStringThread(String printString) {
+	public PrintStringThread(String printString, PrintStringPriority priority, int threadNumber) {
 		this.printString = printString;
+		this.priority = priority;
+		this.threadNumber = threadNumber;
 	}
 
-	
 	public void run() {
 		while (true) {
-			System.out.print(printString);
-			try {
-				sleep(100);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+			priority.printString(printString,threadNumber);
 		}
 	}
 }
