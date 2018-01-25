@@ -1,4 +1,4 @@
-package com.test.thread;
+package com.dontpanic.thread;
 
 /**
  * Thread to print string value

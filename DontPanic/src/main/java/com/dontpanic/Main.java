@@ -1,7 +1,7 @@
-package com.test;
+package com.dontpanic;
 
-import com.test.thread.PrintStringThread;
-import com.test.thread.PrintStringPriority;
+import com.dontpanic.thread.PrintStringPriority;
+import com.dontpanic.thread.PrintStringThread;
 
 public class Main {
 

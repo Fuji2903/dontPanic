@@ -1,4 +1,4 @@
-package com.test.thread;
+package com.dontpanic.thread;
 
 /**
  * Print string value according to priority
